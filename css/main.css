@@ -157,3 +157,11 @@ h2 {
     width: 80%;
   }
 }
+
+@media only screen and (max-height: 400px) {
+
+  .main-header {
+    display: none;
+  }
+
+}

@@ -160,8 +160,48 @@ h2 {
 
 @media only screen and (max-height: 400px) {
 
+  body {
+    margin-top: 3%
+  }
+
+  .container {
+    width: 80%
+  }
+
+  #middle {
+    height: 25vw;
+  }
   .main-header {
     display: none;
   }
 
+  .buttons {
+    position: fixed;
+    bottom: 2vw;
+    left: 30%;
+  }
+
+  #middle img {
+    position: fixed;
+    width: 23%;
+    bottom: 10vw;
+    left: 38%;
+  }
+  #again {
+    width: 33%;
+    position: fixed;
+    bottom: 2vw;
+    left: 33%;
+  }
+  .text-center {
+    font-size: 0.8 em;
+  }
+
+  .friend-objects img {
+    width: 33%;
+  }
+  
+  .food-objects img {
+    width: 33%;
+  }
 }

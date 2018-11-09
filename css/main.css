@@ -180,6 +180,8 @@ h2 {
     bottom: 2vw;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
+    width: 1000px;
   }
 
   #middle img {

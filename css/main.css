@@ -165,7 +165,7 @@ h2 {
   }
 
   .container {
-    width: 80%
+    width: 90%
   }
 
   #middle {
@@ -188,7 +188,8 @@ h2 {
     position: fixed;
     width: 23%;
     bottom: 10vw;
-    left: 38%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #again {
     width: 33%;
@@ -201,10 +202,10 @@ h2 {
   }
 
   .friend-objects img {
-    width: 33%;
+    width: 28%;
   }
   
   .food-objects img {
-    width: 33%;
+    width: 28%;
   }
 }

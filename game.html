@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat Brush" rel="stylesheet">  <link href="css/main.css" type="text/css" rel="stylesheet">
+  <title>Food or Friend</title>
+</head>
+<body>
+  <div class="container">
+    <section class="main-header text-center">
+      <h1>Food or Friend?</h1>
+      <p>Decide if what you see on the picture is <span class="h2">Food</span> or <span class="h2">Friend</span></p>
+    </section>
+    <section class="section-header row">
+      <div id="food-header" class="col-sm-4 col-xs-4 float-left">
+        <img src="images/food.svg" alt="plate">
+        <span class="h2">Food</span>
+      </div>
+      <div id="score" class="col-sm-4 col-xs-4 text-center"></div>
+      <div id="friends-header" class="col-sm-4 col-xs-4 float-right">
+        <span class="h2">Friends</span>
+        <img src="images/friends.svg" alt="friends">
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-sm-4 col-xs-3">
+        <div class="food-objects"></div>
+      </div>
+      <div class="col-sm-4 col-xs-6 text-center">
+        <audio id="click" src="audios/click.mp3" preload="auto"></audio>
+        <div id="middle"><button type="button" class="btn btn-info">START</button></div>
+      </div>
+      <div class="col-sm-4  col-xs-3 text-right">
+        <div class="friend-objects"></div>
+      </div>
+    </div>
+    <footer>
+      <p class="footer">Made by Lyudmyla Baron</p>
+    </footer>
+  </div>
+  <section class="buttons"></section>
+  <!-- Modal -->
+  <div id="foodModal" class="modal fade" role="dialog">
+    <div class="modal-dialog"> 
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Eat me!</h1>
+        </div>
+        <div class="modal-body">
+          <h2>I am full of delicious goodness!</h2>
+          <audio autoplay id="eat-me" src="audios/eat_me.mp3"></audio>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default enter" data-dismiss="modal" onclick="document.getElementById('click').play();">Try again!</button>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div id="friendModal" class="modal fade" role="dialog">
+      <div class="modal-dialog"> 
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title">Don't eat me!</h1>
+          </div>
+          <div class="modal-body">
+            <h2>I just want to be loved...</h2>
+            <audio autoplay id="dont-eat-me" src="audios/dont_eat_me.mp3"></audio>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default enter" data-dismiss="modal" onclick="document.getElementById('click').play();">Try again!</button>
+          </div>
+        </div>    
+      </div>
+    </div>
+    <div id="gameOverModal" class="modal fade" role="dialog">
+      <div class="modal-dialog"> 
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title congratulations">Congratulations!</h1>
+          </div>
+          <div class="modal-body">
+            <h2>You made 10 new friends!</h2>
+            <audio autoplay id="yay" src="audios/yay.mp3"></audio>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default enter" data-dismiss="modal" onclick="document.getElementById('click').play();">Yay!</button>
+          </div>
+        </div>    
+      </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="javascript/game.js"></script>
+  <script src="javascript/main.js"></script>
+</body>
+</html>

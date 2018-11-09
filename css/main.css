@@ -1,0 +1,159 @@
+body {
+  background-color: #def3ec;
+  font-family: 'Caveat Brush';
+  font-size: 3em;
+  font-weight: 500;
+  color: #08a8b3;
+  width: 100%;
+}
+
+p, .modal-title {
+  color: #fb7f94;
+}
+
+h4 {
+  color: #fb7f94;
+}
+
+.section-header {
+  width: 100%;
+  margin-bottom: 3%;
+  margin-left: 0px;
+}
+
+.section-header img {
+  display: inline;
+  width: 7vw;
+}
+
+#score {
+  padding: 0;
+}
+
+#friends-header {
+  text-align: right;
+  display: inline;
+}
+
+#food-header {
+  text-align: left;
+  display: inline;
+}
+
+.text-right {
+  text-align: right;
+}
+
+#middle {
+  height: 20vw;
+}
+
+.buttons {
+  display: block;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.btn-info {
+  width: 50%;
+}
+
+#again {
+  width: 30%;
+}
+
+#middle img {
+  width: 70%;
+}
+
+.food, .btn-default {
+  background-color: #7cf1d8;
+  width: 20vw;
+}
+
+.friend {
+  background-color: pink;
+  width: 20vw;
+}
+
+.modal, .modal-footer {
+  text-align: center;
+}
+
+.congratulations {
+  font-size: 2em;
+  -webkit-animation: rainbow 1s infinite; 
+}
+
+@-webkit-keyframes rainbow{
+  0%{color: #fb7f94;}	
+  10%{color: purple;}	
+	20%{color: rgb(240, 76, 76);}
+	40%{color: orange;}
+	60%{color: #37f1a4;}
+	100%{color: purple;}
+	100%{color: #fb7f94;}	
+}
+
+h2 {
+  font-size: 1em;
+}
+
+.friend-objects img {
+  width: 20%;
+}
+
+.food-objects img {
+  width: 20%;
+}
+
+@media only screen and (max-width: 990px) {
+  #middle img {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #middle {
+    height: 25vw;
+  }
+}
+
+.footer {
+  color: #a4b2b3;
+  font-size: 0.5em;
+  position: fixed;
+  bottom: 0;
+  right: 1vw;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  .btn {
+    width: 35vw;
+  }
+
+  .section-header img {
+    display: none;
+  }
+
+  .friend-objects img {
+    width: 30%;
+  }
+  
+  .food-objects img {
+    width: 30%;
+  }
+
+  #middle {
+    height: 40vw;
+  }
+
+  #middle img {
+    width: 80%;
+  }
+}
